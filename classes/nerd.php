@@ -1,6 +1,6 @@
 <?php 
 
-class Nerd{
+class Nerd {
 
 	public $graduate;
 	public $school;

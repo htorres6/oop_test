@@ -73,6 +73,8 @@
 
 
 
+
+
 	$hits= 0;
 	$blocked= 0;
 		while ($hits < 3) {
@@ -91,11 +93,6 @@
 		echo "<p>It Took {$blocked} Chances For a PerFect Hit Combo!</p>";
 
 	
-
-
-
-
-
 
 	?>
 </h4>
