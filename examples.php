@@ -166,7 +166,7 @@ $round_decimal= round(M_PI, 10);
 	echo "</ol>";
 
 	// Randomly select a winner!
-	$ppl= count($friends);
+	$ppl= count($friends) * .5;
 	$pick= rand(0, $ppl);
 
 	// Print the winner's name in ALL CAPS
@@ -249,7 +249,7 @@ class Person {
       $this->age= $age;
     }
     
-    // Creating a method (function tied to an object)
+    // Creating a "method" (function tied to an object)
     public function greet() {
       return "Hello, my name is " .$this->firstname. " " .$this->lastname. ". And I am " .$this->age. " years old. Very nice to meet you! :-) ";
     }
@@ -311,6 +311,38 @@ class Person {
 
 ?>
 </p>
+
+<p>
+<?php
+    class Dog{
+        public $num_legs= 4;
+        public $name;
+
+        public function __construct($name){
+            $this->name= $name;
+        }
+
+        public function bark(){
+            return "Woof! ";
+        }
+
+        public function greet(){
+            return "Hello Mr. Human, my name is " .$this->name. ". Very nice to meet you!.. I'm a DOG..";
+        }
+    }
+
+    $dog1= new Dog("Barker");
+    $dog2= new Dog("Moe");
+
+
+        echo $dog1->bark();
+        echo $dog2->greet();
+
+
+?>
+</p>
+
+
 
 
 
